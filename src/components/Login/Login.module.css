@@ -1,0 +1,10 @@
+.login{
+    display: grid;
+
+    grid-template-columns:  2fr 1fr;
+    background-color: indianred;
+}
+.back_logo{
+    width: auto;
+    height: auto;
+}
