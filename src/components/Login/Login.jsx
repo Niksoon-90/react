@@ -43,7 +43,7 @@ class Login extends Component{
                 'Content-Type': 'text/plain; charset=utf-8'
             },
             body: JSON.stringify(user),
-            mode: 'cors'
+            mode: 'тщ-cors'
             }).then(res =>res.json())
             .then(response => console.log('OK', JSON.stringify(response)))
             .catch(error => console.error('Error'));
