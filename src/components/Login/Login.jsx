@@ -11,7 +11,7 @@ class Login extends Component{
         this.state = {
             username: '',
             password: '',
-            urlServ: '10.58.1.53:3000',  //Url server
+            urlServ: 'http://httpbin.org/post',  //Url server
             submitted: false,       // проверка на отправку
             alt:'Error'             //ошибка вывода img
         };
@@ -29,19 +29,21 @@ class Login extends Component{
         e.preventDefault();
 
         this.setState({submitted: true});
-        const {username,  urlServ} = this.state;
+        let user ={
+             username: this.state.username,
+             password: this.state.password
+         }
+         console.log(JSON.stringify(user))
+       // const {username,  urlServ} = this.state;
 
 
-        if(!(username )) return;
-
-        console.log(username)
-        console.log(urlServ)
-        fetch(urlServ, {
-            method: 'Post',
-            body: JSON.stringify(username),
+        fetch(this.state.urlServ, {
+            method: 'POST',
             headers: {
-                'Content-Type': 'aplication/json'
-            }
+                'Content-Type': 'text/plain; charset=utf-8'
+            },
+            body: JSON.stringify(user),
+            mode: 'cors'
             }).then(res =>res.json())
             .then(response => console.log('OK', JSON.stringify(response)))
             .catch(error => console.error('Error'));
