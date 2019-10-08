@@ -1,33 +1,34 @@
 import React, {Component} from 'react'
 import log from "../../Login/Login.module.css";
-import UsrSelect from './UserSql'
+import {userService} from '../SQL/UserSql'
 
 
 class User extends Component{
     constructor(props){
         super(props);
         this.state = {
-            departmentid: '',
+            departmentId: 0, //
             firstname: '',
             secondname: '',
             lastname: '',
             login: '',
             password: '',
-            urlServ: 'http://10.58.1.53:8181'
+          //  urlServ: 'http://httpbin.org/post'
+            urlServ: 'http://10.58.1.53:8181/people/newperson'
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     componentDidMount() {
-        for (let i=0; i<=10000; i++){
-            console.log(i )
-            console.log(i)
-        }
+        // for (let i=0; i<=10000; i++){
+        //     console.log(i )
+        //     console.log(i)
+        // }
     }
     componentWillMount() { // перед рендеренгом компонента
-        for (let i=0; i<=10000; i++){
-            console.log(i, '=i')
-        }
+        // for (let i=0; i<=10000; i++){
+        //     console.log(i, '=i')
+        // }
     }
 
     handleChange(e){
@@ -37,12 +38,13 @@ class User extends Component{
     }
     handleSubmit(e){
         e.preventDefault();
+
         this.setState({submitted: true});
-        const {departmentid, firstname,  secondname, lastname, login,password, urlServ} = this.state;
+        const {departmentId, firstname,  secondname, lastname, login, password, urlServ} = this.state;
 
-        if(!(departmentid && firstname && secondname && lastname && login && password)) return;
+        if(!(departmentId && firstname && secondname && lastname && login && password)) return;
 
-        UsrSelect(departmentid, firstname,  secondname, lastname, login,password, urlServ)
+        userService.UsrSelect(departmentId, firstname,  secondname, lastname, login, password, urlServ)
             .then(
                 user =>
                     localStorage.setItem('usersss', JSON.stringify(user)),
@@ -56,8 +58,8 @@ class User extends Component{
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <div className={log.inputr}>
-                        <label htmlFor="departmentid">Департамент</label>
-                        <input type="text" name="departmentid"  onChange={this.handleChange}/>
+                        <label htmlFor="departmentId">Департамент</label>
+                        <input type="number" name="departmentId"  onChange={this.handleChange}/>
                     </div>
                     <div className={log.inputr}>
                         <label htmlFor="firstname">Имя</label>

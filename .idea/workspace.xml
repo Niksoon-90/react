@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aba80cc-67ac-415b-8b74-87779d45cb06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Data/User/UserSql.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Data/Department/Department.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Data/SQL/DepartmentSql.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Data/SQL/UserSql.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Data/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Data/User/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Data/User/UserSql.jsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resource" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Data/Department" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -30,10 +33,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\REACT\react\src\components\Data\Department" />
       <recent name="$PROJECT_DIR$/src/resource" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\REACT\react\src\components\Data\SQL" />
       <recent name="$PROJECT_DIR$/src/resource" />
     </key>
   </component>
@@ -76,6 +81,7 @@
       <updated>1569474770742</updated>
       <workItem from="1569474772056" duration="33638000" />
       <workItem from="1570109719861" duration="29704000" />
+      <workItem from="1570516860555" duration="8355000" />
     </task>
     <servers />
   </component>
