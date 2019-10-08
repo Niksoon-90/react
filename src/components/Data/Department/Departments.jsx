@@ -19,7 +19,8 @@ class Departments extends Component{
     selectCountry = (e) => {
         let idx = e.target.selectedIndex;
         let dataset = e.target.options[idx].dataset;
-        console.log('ID Code: ', dataset.isd);
+        this.props.updateData(dataset.id);
+        console.log('ID Code: ', dataset.id);
     }
 
     render() {
@@ -27,7 +28,7 @@ class Departments extends Component{
 
         let departmentIdList = departmentId.length > 0 && departmentId.map((item, i) => {
                 return (
-                    <option key={i} data-isd={item.id}>{item.name}</option>
+                    <option key={i} data-id={item.id}>{item.name}</option>
                 )
             }, this);
             return(

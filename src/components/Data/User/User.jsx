@@ -7,6 +7,7 @@ class User extends Component{
     constructor(props){
         super(props);
         this.state = {
+            departmentId: '',
             firstname: '',
             secondname: '',
             lastname: '',
@@ -36,7 +37,8 @@ class User extends Component{
         this.setState({submitted: true});
         const {departmentId, firstname,  secondname, lastname, login, password, urlServ} = this.state;
 
-        if(!(departmentId && firstname && secondname && lastname && login && password)) return;
+        if(!(departmentId && firstname && secondname && lastname && login && password)) return alert('Заполните все поля');
+
 
         userService.UsrSelect(departmentId, firstname,  secondname, lastname, login, password, urlServ)
             .then(
@@ -46,6 +48,12 @@ class User extends Component{
             )
             .catch(error => console.error('Error'));
     }
+
+    updateData = (value) => {
+        this.setState({ departmentId: value })
+        console.log(this.state.departmentId)
+    }
+
 
     render(){
         return(
@@ -57,7 +65,7 @@ class User extends Component{
                     {/*    <input type="text" name="departmentId"  onChange={this.handleChange}/>*/}
                     {/*</div>*/}
                     <div className={log.inputr}>
-                        <Departments/>
+                        <Departments  updateData={this.updateData}/>
                     </div>
                     <div className={log.inputr}>
                         <label htmlFor="firstname">Имя</label>
