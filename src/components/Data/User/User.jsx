@@ -19,15 +19,10 @@ class User extends Component{
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     componentDidMount() {
-        // for (let i=0; i<=10000; i++){
-        //     console.log(i )
-        //     console.log(i)
-        // }
+
     }
     componentWillMount() { // перед рендеренгом компонента
-        // for (let i=0; i<=10000; i++){
-        //     console.log(i, '=i')
-        // }
+
     }
 
     handleChange(e){
@@ -57,13 +52,13 @@ class User extends Component{
             <div>
                 <form onSubmit={this.handleSubmit}>
 
+                    {/*<div className={log.inputr}>*/}
+                    {/*    <label htmlFor="departmentId">Департамент</label>*/}
+                    {/*    <input type="text" name="departmentId"  onChange={this.handleChange}/>*/}
+                    {/*</div>*/}
                     <div className={log.inputr}>
                         <Departments/>
-                        <input type="text" name="departmentId"  onChange={this.handleChange}/>
                     </div>
-
-
-
                     <div className={log.inputr}>
                         <label htmlFor="firstname">Имя</label>
                         <input type="text" name="firstname"  onChange={this.handleChange}/>

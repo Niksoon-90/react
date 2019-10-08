@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aba80cc-67ac-415b-8b74-87779d45cb06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Data/Department/Departments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Data/Department/Department.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Account/Account.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/Account.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Data/Department/Departments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Data/Department/Departments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Data/SQL/DepartmentSql.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Data/SQL/DepartmentSql.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Data/SQL/UserSql.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Data/SQL/UserSql.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Data/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Data/User/User.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +85,7 @@
       <workItem from="1569474772056" duration="33638000" />
       <workItem from="1570109719861" duration="29704000" />
       <workItem from="1570516860555" duration="12561000" />
-      <workItem from="1570532577390" duration="1387000" />
+      <workItem from="1570532577390" duration="8009000" />
     </task>
     <servers />
   </component>

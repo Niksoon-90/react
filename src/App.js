@@ -1,6 +1,5 @@
 import React from 'react';
 import Login from "./components/Login/Login";
-import Header from "./components/Header/Header";
 import Account from "./components/Account/Account";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import {PrivateRout} from "./components/Login/PrivateRout";

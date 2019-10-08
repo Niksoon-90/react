@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import Acc from './Account.module.css'
 import Header from "../Header/Header"
-import Person from './Person/Person'
 import {AgGridReact} from "ag-grid-react";
 import 'ag-grid-community/dist/styles/ag-grid.css'
 import 'ag-grid-community/dist/styles/ag-theme-balham.css'

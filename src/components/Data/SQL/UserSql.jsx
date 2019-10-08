@@ -7,7 +7,7 @@ export const userService = {
  function UsrSelect(departmentId, firstname,  secondname, lastname, login, password, urlServ) {
     const requestOptions = {
         method: 'POST',
-        header: {
+        headers: {
             'X-CSRF-Token': '3399ae85-6f45-4c3e-aff9-1343cdbcebcb', // токен
             'Content-Type': 'application/json'
         },
