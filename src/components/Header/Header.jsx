@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import head from './Header.module.css'
 import logo from './../../resource/logo_rzd.png'
+import {NavLink} from "react-router-dom";
+import User from "../Data/User/User";
 
 
 
@@ -12,7 +14,7 @@ class Header extends Component{
     render() {
         return(
             <div className={head}>
-                <img src={logo} alt='Error image'/>
+                <NavLink to="/User">Пользователи</NavLink>
             </div>
         )
     }

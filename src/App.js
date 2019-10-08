@@ -1,15 +1,28 @@
 import React from 'react';
 import Login from "./components/Login/Login";
 import Header from "./components/Header/Header";
+import Account from "./components/Account/Account";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {PrivateRout} from "./components/Login/PrivateRout";
+import User from "./components/Data/User/User";
 
 
 
 function App() {
   return (
-    <div className="app-wraper">
+      <BrowserRouter >
+        <div className="app-wraper">
+            <Switch>
+                <Route exact path="/" component={Login} />
+                <PrivateRout exact path="/Account" component={Account}   />
+                <Route exact path="/User" component={User} />
+                {/*<PrivateRout exact path="" component={}/>*/}
+                {/*<Route exact path="/Account" component={Account} />*/}
+            </Switch>
         {/*<Header/>*/}
-        <Login/>
-    </div>
+        {/*<Login/>*/}
+        </div>
+      </BrowserRouter>
   );
 }
 
