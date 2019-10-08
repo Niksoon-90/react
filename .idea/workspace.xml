@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aba80cc-67ac-415b-8b74-87779d45cb06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Account/Account.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Account/Account.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Account/Person/Person.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Data/User/User.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Data/User/User.module.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/Authentication.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login/PrivateRout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resource/back_logs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Data/User/UserSql.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Data/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Data/User/User.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569474770742</updated>
       <workItem from="1569474772056" duration="33638000" />
-      <workItem from="1570109719861" duration="27309000" />
+      <workItem from="1570109719861" duration="29704000" />
     </task>
     <servers />
   </component>

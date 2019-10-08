@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import log from "../../Login/Login.module.css";
+import UsrSelect from './UserSql'
+
 
 class User extends Component{
     constructor(props){
@@ -40,8 +42,15 @@ class User extends Component{
 
         if(!(departmentid && firstname && secondname && lastname && login && password)) return;
 
+        UsrSelect(departmentid, firstname,  secondname, lastname, login,password, urlServ)
+            .then(
+                user =>
+                    localStorage.setItem('usersss', JSON.stringify(user)),
 
+            )
+            .catch(error => console.error('Error'));
     }
+
     render(){
         return(
             <div>
