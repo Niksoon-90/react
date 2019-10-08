@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
 import log from "../../Login/Login.module.css";
 import {userService} from '../SQL/UserSql'
-
+import Departments from '../Department/Departments'
 
 class User extends Component{
     constructor(props){
         super(props);
         this.state = {
-            departmentId: 0, //
             firstname: '',
             secondname: '',
             lastname: '',
@@ -57,10 +56,14 @@ class User extends Component{
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
+
                     <div className={log.inputr}>
-                        <label htmlFor="departmentId">Департамент</label>
-                        <input type="number" name="departmentId"  onChange={this.handleChange}/>
+                        <Departments/>
+                        <input type="text" name="departmentId"  onChange={this.handleChange}/>
                     </div>
+
+
+
                     <div className={log.inputr}>
                         <label htmlFor="firstname">Имя</label>
                         <input type="text" name="firstname"  onChange={this.handleChange}/>
